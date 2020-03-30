@@ -1,0 +1,36 @@
+body {
+  background: #ffffff;
+
+  .container {
+    margin-top: 50px;
+    width: 350px;
+
+    .form-signin-heading {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      border-radius: 5px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+      background: #f7f7f7;
+      padding: 30px;
+
+      .img-circle {
+        width: 100px;
+        height: 100px;
+        margin-left: 80px;
+        margin-bottom: 40px;
+      }
+
+      .form-control {
+        margin-bottom: 10px;
+      }
+    }
+
+    .text-center {
+      margin-top: 20px;
+    }
+  }
+}
+

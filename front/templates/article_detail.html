@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load news_filter %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!--    css来源-->
+    <link rel="stylesheet" href="{% static 'css/news_detail.min.css' %}">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/blogajax.min.js' %}"></script>
+    <script src="{% static 'js/message.min.js' %}"></script>
+    <script src="{% static 'js/comment.min.js' %}"></script>
+    <script src="{% static 'arttemplate/template-web.js' %}"></script>
+    <script id='comment-item' type="text/html">
+        {% verbatim %}
+        <li>
+            <div class="comment-info">
+                <img src="{% static 'images/DSC_0199.jpg' %}" alt="" class="avatar">
+                <span class="author">{{comment.author.username}}</span>
+                <span class="pub-time">{{comment.pub_time}}</span>
+            </div>
+            <p class="comment-content">{{ comment.content }} </p>
+        </li>
+        {% endverbatim %}
+    </script>
+</head>
+<body class="home blog custom-font-enabled">
+<main>
+    <header class="header">
+        <div class="signal">
+            <h1>水大鱼大</h1>
+            <a href="/"></a>
+        </div>
+        <div class="desc">
+            <h2>士不可以不弘毅,任重而道远</h2>
+        </div>
+        <div class="category-container">
+            <ul class="nav">
+                {% for category in categories %}
+                    <li class="">{{ category.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </header>
+    <div class="wrapper">
+        <div class="main-wrapper">
+            <ul>
+                <li>
+                    <div class="title">
+                        <h1>
+                            {{ article.title }}
+                        </h1>
+
+                        <span class="views">3000views</span>
+                    </div>
+                    <div class="content">
+                        <div class="article-desc">
+                            {{ article.desc }}
+                        </div>
+                        <div class="article-content">
+                            {{ article.content|safe }}
+                        </div>
+                    </div>
+                    <div class="note">
+                        <p>本条目发布于 {{ article.pub_time }}
+                            ,属于{{ article.category.name }}分类,作者是 {{ article.author.username }} 。</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="comment-wrapper">
+                <h3 class="title">文章评论 ({{ article.comment_set.count }})</h3>
+                <!--name为key 内容为value-->
+                <textarea name="comment" class="comment-textarea logined-textarea"
+                          placeholder="立即登录,参与评论"></textarea>
+                <div class="submit-btn-group">
+                    <button data-comment="{{ article.pk }}" class="submit-btn">立即评论</button>
+                </div>
+                <ul data-comment="{{ article.id }}" class="comment-list">
+                    {% for comment in article.comment_set.all %}
+                        <li>
+                            <div class="comment-info">
+                                <img src="{% static 'images/DSC_0199.jpg' %}" alt="" class="avatar">
+                                <span class="author">{{ comment.author.username }}</span>
+                                <span class="pub-time">{{ comment.pub_time|time_since }}</span>
+                            </div>
+                            <p class="comment-content">{{ comment.content }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="side-wrapper">
+
+            <ul>
+                <li>
+                    <form action="#" method="get" id="search-form">
+                        <div class="side-notice">
+                            <div class="side-title">
+                                <input class="side-input" type="text" name="q" id="q">
+                                <input class="side-btn" type="submit" value="搜索">
+                            </div>
+                        </div>
+                    </form>
+
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">公告</div>
+                        <p>由于最近迁移至阿里云主机，因此Facebook，Google登录不可用，望见谅。 大家如果想测试本站功能,请移步 测试 来测试.谢谢.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">VIEWS</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">分类目录</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">近期文章</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">欢迎您STAR或者FORK本站源代码</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="side-notice">
+                        <div class="side-title">功能</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="site-info"></div>
+        <div class="site-info"></div>
+        <div class="site-info"></div>
+    </footer>
+</main>
+</body>
+</html>
