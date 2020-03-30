@@ -1,0 +1,213 @@
+@import "./common/init";
+
+body {
+  background: #e6e6e6;
+}
+
+main {
+  width: 1150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #fff;
+  padding: 40px;
+  overflow: hidden;
+
+  .header {
+    .signal {
+      h1 {
+        color: #515151;
+        font-weight: 600;
+      }
+
+    }
+
+    .desc {
+      h2 {
+        color: #757575;
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 2;
+      }
+    }
+
+    .category-container {
+      margin-top: 30px;
+      border-bottom: solid 1px #e6e6e6;
+      border-top: solid 1px #e6e6e6;
+      overflow: hidden;
+
+      ul {
+        font-size: 15px;
+
+        li {
+          float: left;
+          margin-right: 40px;
+          line-height: 40px;
+          color: #757575;
+        }
+
+        .active {
+          font-weight: 800;
+          color: #515151;
+          border-bottom: 2px solid #515151;
+        }
+      }
+    }
+  }
+
+  .main-wrapper {
+    float: left;
+    width: 750px;
+
+    li {
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+
+
+    .title {
+      margin-top: 20px;
+      overflow: hidden;
+
+      h1 {
+        font-weight: 100;
+        color: #21759b;
+        font-size: 25px;
+        float: left;
+      }
+
+      .views {
+        margin-top: 50px;
+        float: right;
+        color: #757575;
+      }
+    }
+
+    .content {
+      margin-top: 20px;
+      color: #444;
+      .article-content{
+        margin-top: 20px;
+      }
+
+    }
+
+    .note {
+      margin-top: 20px;
+
+      p {
+        color: #757575;
+        font-size: 12px;
+      }
+    }
+    .comment-wrapper{
+        border-top: 1px solid #eeeeee;
+        padding-top: 20px;
+        .title{
+          color: #212121;
+          font-size: 18px;
+          font-weight: 100;
+        }
+        .comment-textarea{
+          margin-top: 10px;
+          width: 100%;
+          //防止超出页面
+          resize:none;
+          outline: none;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          padding: 6px 10px;
+          box-sizing: border-box;
+        }
+        .nologin-textarea{
+          height: 40px;
+          line-height: 26px;
+          overflow: hidden;
+        }
+        .logined-textarea{
+          height: 80px;
+        }
+        .submit-btn-group{
+          text-align: right;
+          margin-top: 10px;
+          .submit-btn{
+            background:-webkit-linear-gradient(top,#f4f4f4,#e6e6e6);
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            color: #7c7c7c;
+            cursor:pointer;
+          }
+        }
+        .comment-list{
+          font-size: 14px;
+          li{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            .comment-info{
+              color: #878787;
+              overflow: hidden;
+              .avatar{
+                width: 28px;
+                height: 28px;
+                border-radius: 14px;
+                float: left;
+              }
+              .author{
+                float: left;
+                padding-left: 15px;
+                line-height: 28px;
+              }
+              .pub-time{
+                float: right;
+                line-height: 28px;
+              }
+            }
+            .comment-content{
+              margin-top: 7px;
+              padding-left: 43px;
+            }
+          }
+        }
+      }
+  }
+
+  .side-wrapper {
+    margin-top: 40px;
+    width: 350px;
+    float: right;
+    .side-input{
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 8px;
+    }
+    .side-btn{
+      color: #7c7c7c;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(64,64,64,0.1);
+      line-height: 23px;
+      padding: 5px 8px;
+      background-image:-webkit-linear-gradient(top,#f4f4f4,#e6e6e6);
+    }
+
+    li {
+      color: #444444;
+      margin-bottom: 40px;
+      border-bottom: 5px double #e6e6e6;
+
+      .side-notice {
+        margin-bottom: 40px;
+
+        .side-title {
+          font-weight: 600;
+          margin-bottom: 40px;
+        }
+      }
+
+    }
+  }
+}

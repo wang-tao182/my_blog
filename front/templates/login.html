@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="{% static 'css/login.min.css' %}">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'sweetalert/sweetalert.css' %}">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'sweetalert/sweetalert.min.js' %}"></script>
+    <script src="{% static 'js/blogajax.min.js' %}"></script>
+    <script src="{% static 'js/blogalert.min.js' %}"></script>
+    <script src="{% static 'js/auth.min.js' %}"></script>
+    <script src="{% static 'js/message.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+
+    <h2 class="form-signin-heading text-center">请登录您的账号</h2>
+
+    <div class="card card-signin">
+        <img class="img-circle profile-img" src="https://resource.lylinux.net/djangoblog/blog/img/avatar.png" alt="">
+        <input type="text" name="username" placeholder="用户名" class="form-control" required="" id="id_username">
+        <input type="text" name="telephone" placeholder="账号为手机号码" class="form-control" required="" id="id_telephone">
+        <input type="password" name="password" placeholder="密码" class="form-control" required="" id="id_password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="remember" value="1"> 记住我
+            </label>
+        </div>
+        <div class="widget-login">
+            <small>
+                快捷登录:
+            </small>
+            <a href="/oauth/oauthlogin?type=weibo&amp;next_url=/login/" rel="nofollow">
+                <span class="icon-sn-weibo"></span>
+            </a>
+
+            <a href="/oauth/oauthlogin?type=github&amp;next_url=/login/" rel="nofollow">
+                <span class="icon-sn-github"></span>
+            </a>
+
+            <a href="/oauth/oauthlogin?type=qq&amp;next_url=/login/" rel="nofollow">
+                <span class="icon-sn-qq"></span>
+            </a>
+
+
+        </div>
+
+    </div>
+
+    <p class="text-center">
+        <a href="{% url 'blogauth:register' %}">注册</a>
+        |
+        <a href="{% url 'blog:index' %}">回到主页</a>
+    </p>
+
+</div>
+</body>
+</html>
