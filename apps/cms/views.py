@@ -92,5 +92,3 @@ def staff(request):
     except:
         return restful.params_error(message='没有公司职员')
 
-def staff2(request):
-    pass
