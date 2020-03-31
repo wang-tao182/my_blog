@@ -91,3 +91,6 @@ def staff(request):
         return render(request, 'cms/staff.html', context=context)
     except:
         return restful.params_error(message='没有公司职员')
+
+def staff2(request):
+    pass
