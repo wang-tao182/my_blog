@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 {% load news_filter %}
 {% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <!--    css来源-->
-    <link rel="stylesheet" href="{% static 'css/news_detail.min.css' %}">
+{% block title %}
+文章详情
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/news_detail.min.css' %}">
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/blogajax.min.js' %}"></script>
     <script src="{% static 'js/message.min.js' %}"></script>
@@ -25,27 +25,8 @@
         </li>
         {% endverbatim %}
     </script>
-</head>
-<body class="home blog custom-font-enabled">
-<main>
-    <header class="header">
-        <div class="signal">
-            <h1>水大鱼大</h1>
-            <a href="/"></a>
-        </div>
-        <div class="desc">
-            <h2>士不可以不弘毅,任重而道远</h2>
-        </div>
-        <div class="category-container">
-            <ul class="nav">
-                {% for category in categories %}
-                    <li class="">{{ category.name }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-
-    </header>
-    <div class="wrapper">
+{% endblock %}
+{% block main %}
         <div class="main-wrapper">
             <ul>
                 <li>
@@ -92,61 +73,4 @@
                 </ul>
             </div>
         </div>
-
-        <div class="side-wrapper">
-
-            <ul>
-                <li>
-                    <form action="#" method="get" id="search-form">
-                        <div class="side-notice">
-                            <div class="side-title">
-                                <input class="side-input" type="text" name="q" id="q">
-                                <input class="side-btn" type="submit" value="搜索">
-                            </div>
-                        </div>
-                    </form>
-
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">公告</div>
-                        <p>由于最近迁移至阿里云主机，因此Facebook，Google登录不可用，望见谅。 大家如果想测试本站功能,请移步 测试 来测试.谢谢.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">VIEWS</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">分类目录</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">近期文章</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">欢迎您STAR或者FORK本站源代码</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-notice">
-                        <div class="side-title">功能</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="site-info"></div>
-        <div class="site-info"></div>
-        <div class="site-info"></div>
-    </footer>
-</main>
-</body>
-</html>
+{% endblock %}

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ad0a5e-5313-446c-8e79-93bf3b5f6c36" name="Default Changelist" comment="增加了提示" />
+    <list default="true" id="44ad0a5e-5313-446c-8e79-93bf3b5f6c36" name="Default Changelist" comment="增加了提示">
+      <change afterPath="$PROJECT_DIR$/front/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_blog/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_blog/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/article_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,7 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xfz1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -54,7 +61,51 @@
       <recent name="$PROJECT_DIR$/front" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.my_blog">
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/my_blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_blog/a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/my_blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_blog/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="my_blog" type="Python.DjangoServer" factoryName="Django server">
       <module name="my_blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,6 +130,12 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.a" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -116,6 +173,7 @@
       <workItem from="1585238519052" duration="2963000" />
       <workItem from="1585295494011" duration="5556000" />
       <workItem from="1585376992188" duration="27422000" />
+      <workItem from="1585622026996" duration="10986000" />
     </task>
     <servers />
   </component>
@@ -127,6 +185,10 @@
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
     <state x="936" y="339" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/98.36.2462.1404@98.36.2462.1404" timestamp="1584804920852" />
+    <state x="588" y="161" key="CommitChangelistDialog2" timestamp="1585645031314">
+      <screen x="98" y="36" width="2462" height="1404" />
+    </state>
+    <state x="588" y="161" key="CommitChangelistDialog2/98.36.2462.1404@98.36.2462.1404" timestamp="1585645031314" />
     <state x="544" y="372" key="EditFileWatcherDialog" timestamp="1584806149771">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
@@ -135,38 +197,38 @@
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
     <state x="941" y="355" key="FileChooserDialogImpl/98.36.2462.1404@98.36.2462.1404" timestamp="1585584882077" />
-    <state width="2386" height="442" key="GridCell.Tab.0.bottom" timestamp="1585583903913">
+    <state width="2386" height="442" key="GridCell.Tab.0.bottom" timestamp="1585645803303">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="442" key="GridCell.Tab.0.bottom/98.36.2462.1404@98.36.2462.1404" timestamp="1585583903913" />
-    <state width="2386" height="442" key="GridCell.Tab.0.center" timestamp="1585583903911">
+    <state width="2386" height="442" key="GridCell.Tab.0.bottom/98.36.2462.1404@98.36.2462.1404" timestamp="1585645803303" />
+    <state width="2386" height="442" key="GridCell.Tab.0.center" timestamp="1585645803300">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="442" key="GridCell.Tab.0.center/98.36.2462.1404@98.36.2462.1404" timestamp="1585583903911" />
-    <state width="2386" height="442" key="GridCell.Tab.0.left" timestamp="1585583903911">
+    <state width="2386" height="442" key="GridCell.Tab.0.center/98.36.2462.1404@98.36.2462.1404" timestamp="1585645803300" />
+    <state width="2386" height="442" key="GridCell.Tab.0.left" timestamp="1585645803297">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="442" key="GridCell.Tab.0.left/98.36.2462.1404@98.36.2462.1404" timestamp="1585583903911" />
-    <state width="2386" height="442" key="GridCell.Tab.0.right" timestamp="1585583903912">
+    <state width="2386" height="442" key="GridCell.Tab.0.left/98.36.2462.1404@98.36.2462.1404" timestamp="1585645803297" />
+    <state width="2386" height="442" key="GridCell.Tab.0.right" timestamp="1585645803301">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="442" key="GridCell.Tab.0.right/98.36.2462.1404@98.36.2462.1404" timestamp="1585583903912" />
-    <state width="2386" height="475" key="GridCell.Tab.1.bottom" timestamp="1585238501494">
+    <state width="2386" height="442" key="GridCell.Tab.0.right/98.36.2462.1404@98.36.2462.1404" timestamp="1585645803301" />
+    <state width="2386" height="475" key="GridCell.Tab.1.bottom" timestamp="1585623939443">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="475" key="GridCell.Tab.1.bottom/98.36.2462.1404@98.36.2462.1404" timestamp="1585238501494" />
-    <state width="2386" height="475" key="GridCell.Tab.1.center" timestamp="1585238501492">
+    <state width="2386" height="475" key="GridCell.Tab.1.bottom/98.36.2462.1404@98.36.2462.1404" timestamp="1585623939443" />
+    <state width="2386" height="475" key="GridCell.Tab.1.center" timestamp="1585623939440">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="475" key="GridCell.Tab.1.center/98.36.2462.1404@98.36.2462.1404" timestamp="1585238501492" />
-    <state width="2386" height="475" key="GridCell.Tab.1.left" timestamp="1585238501492">
+    <state width="2386" height="475" key="GridCell.Tab.1.center/98.36.2462.1404@98.36.2462.1404" timestamp="1585623939440" />
+    <state width="2386" height="475" key="GridCell.Tab.1.left" timestamp="1585623939438">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="475" key="GridCell.Tab.1.left/98.36.2462.1404@98.36.2462.1404" timestamp="1585238501492" />
-    <state width="2386" height="475" key="GridCell.Tab.1.right" timestamp="1585238501493">
+    <state width="2386" height="475" key="GridCell.Tab.1.left/98.36.2462.1404@98.36.2462.1404" timestamp="1585623939438" />
+    <state width="2386" height="475" key="GridCell.Tab.1.right" timestamp="1585623939441">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
-    <state width="2386" height="475" key="GridCell.Tab.1.right/98.36.2462.1404@98.36.2462.1404" timestamp="1585238501493" />
+    <state width="2386" height="475" key="GridCell.Tab.1.right/98.36.2462.1404@98.36.2462.1404" timestamp="1585623939441" />
     <state x="621" y="171" key="SettingsEditor" timestamp="1584786486837">
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
@@ -175,5 +237,9 @@
       <screen x="98" y="36" width="2462" height="1404" />
     </state>
     <state x="822" y="34" key="search.everywhere.popup/98.36.2462.1404@98.36.2462.1404" timestamp="1585151017630" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/my_blog$a.coverage" NAME="a Coverage Results" MODIFIED="1585625733988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_blog" />
+    <SUITE FILE_PATH="coverage/my_blog$test.coverage" NAME="test Coverage Results" MODIFIED="1585645723195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_blog" />
   </component>
 </project>
